@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #647df9;
+}
+.container{
+    max-width: 1090px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .card{
+    width: calc(33% - 20px);
+    background-color: #fff;
+    padding: 15px 30px 30px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .card .top{
+    background: red;
+    height: 130px;
+    padding-top: 13px;
+    color:#FFF;
+    clip-path: polygon(0 0, 100% 0, 100% 53%, 49% 100%, 0 53%);
+
+}
+.card .top .title{
+    font-size: 27px;
+    font-weight: 600;
+}
+.card .top .price-sec{
+    margin-top: -10px;
+    font-weight: 600;
+}
+.card .top .price-sec .price{
+    font-size: 40px;
+}
+.card .info{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.card .details .plan{
+    position: relative;
+    margin-top: 25px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card .details .plan::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #ddd;
+    top:-12px;
+    border-radius: 25px;
+}
+.card .details .plan i{
+    color: #2db94d;
+}
+.card .details .plan i.fa-xmark{
+    color: #cd3241;
+}
+.card .details button{
+    background: red;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    color:#fff;
+    height: 42px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all ease 0.4s;
+}
+.container .card.one .top,
+.card.one .details button{
+    background: #14eb6e;
+}
+.container .card.two .top,
+.card.two .details button{
+    background: #e87130;
+}
+.container .card.three .top,
+.card.three .details button{
+    background:  #11BCC3;
+}
+.card .details button:hover{
+    filter: brightness(90%);
+}
+@media(max-width:1090px){
+    .container .card{
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:700px){
+    .container .card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

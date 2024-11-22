@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6665ee;
+}
+.wrapper{
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin:0 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper .top{
+    position: relative;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1414b8;
+    border-radius:  12px 12px 0 0;
+    margin-bottom: 30px;
+}
+.wrapper .top::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #1414b8;
+    bottom: -10px;
+    transform: rotate(45deg);
+}
+.top i{
+    font-size: 70px;
+    color: #ccc;
+}
+.wrapper .bottom{
+    padding: 30px;
+}
+.wrapper .bottom .info{
+    font-size: 20px;
+    font-weight: 500;
+}
+.wrapper .bottom .input-box{
+    width: 100%;
+    height:45px;
+    margin: 15px 0 10px;
+}
+.wrapper .bottom .input-box input{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    font-size: 18px;
+    outline: none;
+}
+.wrapper .bottom .input-box input[type = 'email']{
+    padding-left: 15px;
+    border:2px solid #ccc;
+}
+.wrapper .bottom .input-box input[type = 'email']:valid,
+.wrapper .bottom .input-box input[type = 'email']:focus{
+    border-color: #1414b8;
+}
+.wrapper .bottom .input-box input[type = 'submit']{
+    border:none;
+    color: #fff;
+    background: #6665ee;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.wrapper .bottom .footer{
+    font-size: 16px;
+    margin-top: 12px;
+}

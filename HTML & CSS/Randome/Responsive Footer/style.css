@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+}
+footer p,
+footer a{
+    color: #fff;
+}
+footer .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: auto;
+    color: #fff;
+    padding:20px;
+}
+footer .content .box{
+    width: 33%;
+    transition: all ease 0.3s;
+}
+.box .topic{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.box .upper p{
+    text-align: justify;
+}
+.box .lower{
+    margin-top: 30px;
+}
+.box .lower a i{
+    margin-right: 16px;
+}
+.box.middle{
+    padding-left: 30px;
+}
+.box.middle a{
+    line-height: 32px;
+    transition: all 0.3s ease;
+}
+.box.middle a:hover{
+    color: #eb2f06;
+}
+.box.right form input[type="email"]{
+    height:45px;
+    padding-left: 10px;
+    border:  2px solid #222;
+    background: #000;
+    font-size: 17px;
+    width:100%;
+    outline: none;
+    border-radius: 5px;
+}
+.box.right form input[type="submit"]{
+    height:42px;
+    background-color: #eb2f06;
+    color: #d9d9d9;
+    border:  2px solid #eb2f06;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width:100%;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.box.right form input[type="submit"]:hover{
+    background:none;
+    color: #eb2f06;
+}
+.box.right .media-icons{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+.box.right .media-icons a{
+    margin:0 5px;
+    width:45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #d9d9d9;
+    border:  2px solid #222;
+    background: #000;
+    border-radius: 6px;
+    transition: all ease 0.3s;
+}
+.box.right .media-icons a:hover{
+    border-color: #eb2f06;
+}
+footer .bottom p{
+    text-align: right;
+    width: 100%;
+}
+footer .bottom a{
+    color: #eb2f06;
+}
+footer a{
+    transition: all ease 0.3s;
+}
+footer a:hover{
+    color: #eb2f06;
+}
+@media(max-width:1100px) {
+    .box.middle{
+        padding-left: 50px;
+    }
+}
+@media(max-width:950px) {
+    footer .content .box{
+        width: 50%;
+        }
+    .box.right{
+        margin-top: 30px;
+    }
+}
+@media(max-width:650px) {
+    footer{
+        position: relative;
+    }
+    footer .content .box{
+        width: 100%;
+        }
+        footer .content .middle{
+        margin: 30px 0;
+    }
+    .box.middle{
+        padding-left: 0px;
+    }
+}
+

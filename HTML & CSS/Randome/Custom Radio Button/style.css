@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #68Eacc 0%, #497BE8 100%);
+}
+.card{
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+}
+.card .title{
+    font-size: 22px;
+    font-weight: 500;
+}
+.card  .content{
+    margin-top: 20px;
+}
+.card  .content .box {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #ddd;
+    margin:12px 0;
+    border-radius: 5px;
+    border: solid 2px transparent;
+    outline: none;
+    transition: all ease 0.3s;
+}
+#one:checked ~.one,
+#two:checked ~.two,
+#three:checked ~.three{
+    border-color: #8E49E8;
+    background: #d5bbf7;
+}
+.card  .content .box:hover{
+    background: #d5bbf7;
+}
+.card  .content .box .plan{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.card  .content .box .circle{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: red;
+    border:5px solid transparent;
+    background: #ccc;
+    margin-right: 15px;
+    transition: all ease 0.2s;
+}
+#one:checked ~.one .circle,
+#two:checked ~.two .circle,
+#three:checked ~.three .circle{
+    background: #fff;
+    border-color:  #8E49E8;
+}
+.card  .content input{
+    display: none;
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #8e44ad;
+
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.box{
+    background-color: #fff;
+    max-width: calc(33% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.box .image{
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #8e44ad;
+    padding: 3px;
+    margin: 10px 0;
+}
+.box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid #fff;
+}
+.box .name{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8e44ad;
+    margin:10px 0 3px 0;
+}
+.box .ratting i{
+    color: #8e44ad;
+}
+.box p{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+}
+.box .btns{
+    margin:20px 0 5px 0;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+.box .btns button{
+    width:100%;
+    background-color:#8e44ad;
+    padding: 9px 0px;
+    outline: none;
+    border:2px solid #8e44ad;
+    border-radius: 5px;
+    color:  #8e44ad;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+.box .btns button:first-child{
+    margin-right: 5px;
+    background: #fff;
+    transition: all ease 0.4s;
+}
+.box .btns button:first-child:hover{
+    background-color:#8e44ad;
+    color:#fff;
+}
+.box .btns button:last-child{
+    color:#fff;
+}
+@media(max-width:1110px){
+    .box{
+        max-width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:710px){
+    .box{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

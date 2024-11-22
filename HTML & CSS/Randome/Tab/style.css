@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    width:100%;
+    background-color: #dad3f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 950px;
+    width:100%;
+    background-color: #fff;
+    padding: 40px 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.container .main-title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.container .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .content input[type="radio"]{
+    display: none;;
+}
+.container .content .list{
+    position: relative;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.container .content .list label{
+    height:60px;
+    color:#333;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 12px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+.container .content .list label:hover{
+    color: #6d50e2;
+}
+.content .list .indicator{
+    position: absolute;
+    width: 100%;
+    height:60px;
+    top:0px;
+    left:0;
+    background-color: #6d50e2;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+#home:checked ~ .list .indicator{
+    top:0px;
+}
+#blog:checked ~ .list .indicator{
+    top:60px;
+}
+#help:checked ~ .list .indicator{
+    top:120px;
+}
+#code:checked ~ .list .indicator{
+    top:180px;
+}
+#about:checked ~ .list .indicator{
+    top:240px;
+}
+#home:checked ~ .list .home,
+#blog:checked ~ .list .blog,
+#help:checked ~ .list .help,
+#code:checked ~ .list .code,
+#about:checked ~ .list .about{
+    color:#fff;
+}
+.content .text-content{
+    width:80%;
+    height:100%;
+}
+.content .text-content .text{
+    display: none;
+}
+.content .text-content .text.home{
+    display: block;
+}
+.content .text-content .text .title{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.content .text-content .text p{
+    text-align: justify;
+}
+#blog:checked ~ .text-content .home,
+#help:checked ~  .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+    display: none;
+}
+#home:checked ~  .text-content .home,
+#blog:checked ~  .text-content .blog,
+#help:checked ~  .text-content .help,
+#code:checked ~  .text-content .code,
+#about:checked ~  .text-content .about{
+    display: block;
+}
+
+

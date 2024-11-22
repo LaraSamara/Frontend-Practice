@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form With Icons</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="title">Login Form</div>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+            <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+        </div>
+        <form action="#">
+            <div class="input-box">
+                <input type="email" placeholder="Email or Phone" required id="email">
+                <label for="email"><i class="fa-solid fa-user"></i></label>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required id="password">
+                <label for="password"><i class="fa-solid fa-lock"></i></label>
+            </div>
+            <div class="option">
+                <div class="remember-div">
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </div>
+                <div class="forget-div">
+                    <a href="#">Forget Password?</a>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Login">
+            </div>
+            <div class="sign-up">Not a member? <a href="#">Signup now</a></div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #ecf0f3;
+}
+.side-bar{
+    position: relative;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    width:300px;
+    background-color: #ecf0f3;
+    box-shadow: 3px 3px 5px #ceced1,
+                -3px -3px 7px #fff,
+                inset 3px 3px 5px #ceced1,
+                inset -3px -3px 7px #fff;
+    padding: 12px;            
+}
+.side-bar .title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title .logo{
+    font-size: 27px;
+    font-weight: 600;
+    color: #31344b;
+}
+.side-bar ul{
+    margin-top: 35px;
+    list-style-type: none;
+}
+.side-bar ul li a{
+    text-decoration: none;
+    color: #31344b;
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 25px;
+    border-radius: 6px ;
+    box-shadow: 3px 3px 5px #ceced1,
+                -3px -3px 7px #fff;
+    transition: all 0.3s ease;
+}
+.side-bar ul li a:hover{
+    box-shadow: inset 3px 3px 5px #ceced1,
+                inset -3px -3px 7px #fff;
+                color: #3498db;            
+}
+.side-bar ul li a i{
+    margin-right: 10px;
+}
+.side-bar .btns{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.btns a{
+    position: relative;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 3px 3px 5px #ceced1,
+    -3px -3px 7px #fff;
+    margin:0 4px;
+    font-size: 17px;
+    transition: all 0.4s ease;
+}
+.btns a:hover::before{
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: inset 3px 3px 5px #ceced1,
+                inset -3px -3px 7px #fff;
+    border-radius: 50%;            
+}
+.btns a:nth-child(1){
+    color: #4267b2;
+}
+.btns a:nth-child(2){
+    color: #1da1f2;
+}
+.btns a:nth-child(3){
+    color: #e1306c;
+}
+.btns a:nth-child(4){
+    color:  #ff0000;
+}
+#check{
+    display: none;
+}
+.button{
+    font-size: 17px;
+    width:37px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 50%;
+    color: #31344b;
+    cursor: pointer;
+    box-shadow:  3px 3px 5px #ceced1,
+                -3px -3px 7px #fff;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    box-shadow: inset 3px 3px 5px #ceced1,
+                inset -3px -3px 7px #fff;
+}
+.button.bar{
+    position: absolute;
+    top:15px;
+    left:15px
+}
+#check:checked ~.side-bar{
+    left:0;
+}

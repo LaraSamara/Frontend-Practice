@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: #34495e;
+}
+.main_div{
+    position: relative;
+    width:250px;
+    height: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.main_div::before{
+    content: 'Share';
+    position: absolute;
+    border-radius: 4px;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-size: 27px;
+    font-weight: 500;
+    color: #34495e;
+    transition: all ease-in-out 0.4s;
+}
+.main_div:hover::before{
+    left:-250px;
+}
+.main_div .social-media{
+    position: absolute;
+    top:0;
+    left:250px;
+    width: 100%;
+    height: 100%;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+    transition: all ease-in-out 0.4s;
+}
+.main_div:hover .social-media{
+    left:0;
+}
+.main_div .social-media a i{
+    color:#34495e;
+    font-size: 22px;
+    transition: all ease 0.4s;
+}
+.main_div .social-media a i:hover{
+    transform: scale(1.1);
+}

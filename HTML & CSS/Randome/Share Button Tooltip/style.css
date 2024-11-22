@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #0984e3
+}
+.main-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#check{
+    display: none;
+}
+.main-box label{
+    position: relative;
+    display: inline-block;
+    width:150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #0984e3;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+}
+.main-box label::before{
+    content: 'Cancel';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+#check:checked ~label::before{
+    opacity: 1;
+}
+.main-box .icons{
+    position: absolute;
+    top:-130px;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: #fff;
+    width:140%;
+    height: 110%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+#check:checked ~.icons{
+    opacity: 1;
+    top:-80px;
+}
+.main-box .icons::before{
+    content: '';
+    position: absolute;
+    width:18px;
+    height: 18px;
+    background-color: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform:translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.main-box .icons a {
+    color: #0984e3;
+    font-size: 20px;
+    transition: all ease 0.4s;
+}
+.main-box .icons a:hover{
+    transform: translateY(-2px);
+}
+.main-box .icons a:nth-child(1):hover{
+    color: #426782;
+}
+.main-box .icons a:nth-child(2):hover{
+    color: #1da1f2;
+}
+.main-box .icons a:nth-child(3):hover{
+    color: #e1306c;
+}
+.main-box .icons a:nth-child(4):hover{
+    color: #ff0000;
+}

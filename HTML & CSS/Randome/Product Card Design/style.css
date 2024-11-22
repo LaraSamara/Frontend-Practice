@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fd79a8;
+}
+.wrapper{
+    max-width: 600px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.wrapper .left{
+    width: 50%;
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    padding-top: 18px;
+    z-index: 1;
+}
+.wrapper .left .title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.wrapper .left .ratting{
+    color:#e84393;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.wrapper .left p{
+    color: #8d8d8d;
+    font-size: 17px;
+}
+.wrapper .left button{
+    display: inline-flex;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #e84393;
+    color:#fff;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all ease 0.4s;
+}
+.wrapper .left button:hover{
+    transform: scale(0.98);
+}
+.wrapper .left button span{
+    margin-left: 12px;
+}
+.wrapper .right{
+    background: url(iphone12.png) no-repeat;
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 5px 5px 0;
+}
+.wrapper .right:hover ul{
+    margin-left: 0;
+    opacity: 1;
+}
+.wrapper .right ul{
+    background: rgba(0,0,0,0.8);
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 26px;
+    color: #fff;
+    font-size: 15px;
+    margin-left: -300px;
+    transition: all ease 0.4s;
+}

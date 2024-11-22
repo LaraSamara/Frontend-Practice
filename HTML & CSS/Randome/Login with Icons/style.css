@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #be2edd;
+}
+.main-div{
+    background-color: #fff;
+    width: 365px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.main-div .title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.main-div .icons{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.main-div .icons a{
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    width:100%;
+    height:45px;
+    margin: 0 5px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    color:#fff;
+    transition: all 0.4s ease;
+}
+.main-div .icons a i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+.main-div .icons a:first-child{
+    background-color: #4267B2;
+}
+.main-div .icons a:first-child:hover{
+    background-color: #375695;
+}
+.main-div .icons a:last-child{
+    background: #1DA1F2;
+}
+.main-div .icons a:last-child:hover{
+    background: #0d8bd9;
+}
+.main-div form{
+    margin-top: 25px;
+}
+.main-div form .input-box{
+    position: relative;
+    height: 50px;
+    width:100%;
+    margin:10px 0;
+}
+.main-div form .input-box input{
+    width:100%;
+    height: 100%;
+    padding-left: 45px;
+    border-radius: 5px;
+    outline: none;
+    border:1px solid lightgray;
+}
+.main-div form .input-box input:focus{
+    border-color: #be2edd;
+}
+.main-div form .input-box label{
+    position: absolute;
+    left:20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+.main-div .option{
+    display: flex;
+    justify-content: space-between;
+}
+.main-div .option .remember-div{
+    display: flex;
+    align-items: center;
+}
+.main-div .option .remember-div span{
+    margin-left: 5px;
+    font-size: 16px;
+    color:#333;
+}
+.main-div .option .forget-div a{
+    text-decoration: none;
+    color: #be2edd;
+    font-size: 16px;
+}
+.main-div .option .forget-div a:hover{
+    text-decoration: underline;
+}
+.main-div form .button{
+    width:100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+}
+.main-div form .button input[type="submit"]{
+    width:100%;
+    height:100%;
+    background-color: #be2edd;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius:5px;
+}
+.main-div form .sign-up{
+    text-align: center;
+}
+.main-div form .sign-up{
+    color:#333;
+}
+.main-div form .sign-up a{
+    color: #be2edd;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.main-div form .sign-up a:hover{
+    text-decoration: underline;
+}

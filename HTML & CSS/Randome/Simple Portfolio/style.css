@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    height:100vh;
+    width:100%;
+    background: url('images/background.png') no-repeat;
+    background-position: center;
+
+}
+header nav{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 1;
+}
+nav .navbar{
+    width:90%;
+    margin:20px auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    height:80px;
+    width: 150px;
+}
+.navbar .logo img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    list-style-type: none;
+    margin:0px 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 17px;
+    font-weight: 400;
+}
+.navbar ul li a:hover{
+    color:#000;
+}
+.navbar .search-box{
+    position: relative;
+    height: 40px;
+    width: 250px;
+}
+.search-box input[type="text"]{
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    outline: none;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    padding: 0 10px 0 40px;
+    font-size: 18px;
+}
+.search-box a{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:10px;
+    color: #2c3e50;
+    font-size: 20px;
+    border-right: 2px solid #2c3e50;
+    padding-right: 5px;
+}
+.content{
+    position: absolute;
+    top: 33%;
+    left:7%;
+    color:#2c3e50;
+}
+.content .text-content .text{
+    font-size: 27px;
+}
+.content .text-content .name{
+    font-size: 75px;
+    margin:-20px 0 0 -3px;
+}
+.content .text-content .job{
+    font-size: 40px;
+    display: flex;
+}
+.content .text-content .typing{
+    margin-left: 10px;
+    color: #1de2d1;
+    border-right: 4px solid #1de2d1;
+    animation: typing 5s steps(15) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes typing{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:15ch;
+    }
+    100%{
+        width:0ch;
+    }
+}
+.content .buttons{
+    margin:20px 0 0 50px;
+}
+.content .buttons button{
+    color:#fff;
+    margin:0 10px;
+    padding:8px 6px;
+    border-radius:6px ;
+    font-size: 18px;
+    border:none;
+    outline: none;
+    background: linear-gradient(135deg, #2AFADF 10%, #C346C2 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.content .buttons button:hover{
+    transform: scale(0.98);
+}
+header .girle img{
+    height: 95%;;
+    position:absolute;
+    bottom:0;
+    right:80px;
+}
+header .media-icons{
+    position: absolute;
+    bottom: 40px;
+    right:40px;
+}
+.media-icons ul li{
+    list-style-type: none;
+    margin : 8px 0;
+}
+.media-icons ul li a{
+    color:#2c3e50;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.media-icons ul li a:hover{
+    opacity: 1;
+}

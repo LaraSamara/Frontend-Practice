@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height:100vh;
+    width:100%;
+    background-color: #4070f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 500px;
+    width:100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin:0px 5px;
+}
+.container .skill-box {
+    width: 100%;
+    margin:25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color:#333;
+}
+.skill-box .skill-bar{
+    width:100%;
+    height: 8px;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.1);
+    margin-top: 6px;
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    width:90%;
+    height: 100%;
+    background-color: #4070f4;
+    border-radius: 6px;
+    animation: progress 0.4s ease-in-out forwards;
+}
+.skill-bar .skill-per.css{
+    width:70%;
+}
+.skill-bar .skill-per.js{
+    width:50%;
+}
+.skill-bar .skill-per.nj{
+    width:30%;
+}
+
+@keyframes progress {
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-bar .skill-per .tooltip{
+    position: absolute;
+    right:-14px;
+    top:-28px;
+    padding: 2px 6px;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 500;
+    border-radius: 3px;
+    z-index: 1;
+}
+.skill-bar .skill-per .tooltip::before{
+    content: '';
+    position: absolute;
+    width:7px;
+    height: 7px;
+    background-color: #4070f4;
+    left:50%;
+    bottom: -3px;
+    transform: translatex(-50%) rotate(45deg);
+    z-index: 0;
+}

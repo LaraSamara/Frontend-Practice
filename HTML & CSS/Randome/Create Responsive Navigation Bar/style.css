@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    height: 80px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+nav input{
+    display: none;
+}
+nav .menu-btn{
+    color:#fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+
+}
+nav .logo{
+    color:#fff;
+    font-size: 33px;
+    font-weight: 600;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    margin:0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 8px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all ease 0.4s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background: #fff;
+    color: #1b1b1b;
+}
+#check:checked ~.menu-btn i::before{
+    content: '\f00d';
+}
+@media(max-width:900px){
+    nav .menu-btn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top:80px;
+        left: 100%;
+        bottom: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        align-items: center;
+        transition: all ease 0.4s;
+    }
+    #check:checked ~ul{
+        left:0;
+    }
+    nav ul li{
+        margin:30px 0;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+    nav ul li a:hover,
+nav ul li a.active{
+    background: none;
+    color: cyan;
+}
+}

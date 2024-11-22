@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(130, 106, 251);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 15pc rgba(0,0,0,0.1);
+}
+.container header{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 30px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+.input-box label{
+    color: #333;
+}
+.input-box :where(input, select){
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border:1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 10px;
+}
+.input-box input:focus{
+    box-shadow: 0 0px 5px rgba(0,0,0,0.4);
+}
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+.form  .gender-box{
+    margin-top: 20px;
+}
+.gender-options :where(input, label){
+    cursor: pointer;
+}
+.gender-options input{
+    accent-color:rgb(130, 106, 251);
+}
+.gender-box :where(.gender-options, .gender-input){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.gender-box .gender-input{
+    column-gap: 15px;
+}
+form button{
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    outline: none;
+    border:none;
+    border-radius: 8px;
+    background: rgb(130, 106, 251);
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+form button:hover{
+    background: rgb(88, 56, 250);
+}
+/* Responsive */
+@media(max-width:550px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+}

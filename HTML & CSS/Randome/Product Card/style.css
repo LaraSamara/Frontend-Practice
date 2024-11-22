@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: #e6e6e6;
+}
+body::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,  #fd9bb0 10%, #F6416C 100%);
+    clip-path: circle(55% at right 30%);
+    z-index: -1;
+}
+.container{
+    max-width: 750px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    z-index: 1;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,  #fd9bb0 10%, #F6416C 100%);
+    clip-path: circle(65% at right 35%);
+    z-index: -1;
+}
+.container .box.box-1{
+    padding: 35px 5px 0px 35px;
+}
+.box.box-1 .topic{
+    font-size: 30px;
+    font-weight: 500;
+}
+.box.box-1 p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #737373;
+}
+.box.box-1 .ratting{
+    color: #fd9bb0;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.box.box-1 .price-box{
+    margin-top: 16px;
+}
+.price-box .discount{
+    text-decoration: line-through;
+    font-size: 20px;
+    color: #737373;
+}
+.price-box .price{
+    color: #fc6989;
+    font-size: 30px;
+}
+.box.box-1 .button-1{
+    margin-top: 55px;
+}
+.box.box-1 .button-1 button{
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #00e6e6;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.button-1 button:hover{
+    transform: scale(0.98);
+}
+.box.box-2 .image-box{
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 27px;
+}
+.image-box .image{
+    width: 430px;
+    height: 340px;
+}
+.image-box .image  img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box.box-2 .info{
+    margin-right: 35px;
+}
+.info .brand{
+    font-size: 17px;
+    font-weight: 600;
+    color: #c9032e;
+}
+.info .name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.info .shipping{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.info .button2{
+    margin:17px 0;
+}
+.info .button2 button{
+    border:1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    padding: 8px 17px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
